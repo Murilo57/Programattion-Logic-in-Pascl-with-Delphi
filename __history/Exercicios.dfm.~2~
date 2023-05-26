@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = 'Form1'
   ClientHeight = 418
-  ClientWidth = 590
+  ClientWidth = 697
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -46,14 +46,14 @@ object Form1: TForm1
     ParentFont = False
   end
   object bvEx: TBevel
-    Left = 102
-    Top = 216
+    Left = 22
+    Top = 224
     Width = 371
     Height = 186
   end
   object lbExer: TLabel
-    Left = 253
-    Top = 228
+    Left = 173
+    Top = 236
     Width = 63
     Height = 16
     Caption = 'Exercicios'
@@ -65,8 +65,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbCalcMed: TLabel
-    Left = 121
-    Top = 263
+    Left = 35
+    Top = 271
     Width = 126
     Height = 16
     Caption = 'Calc m'#233'dia de nota.'
@@ -78,8 +78,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbCalcSalario: TLabel
-    Left = 253
-    Top = 263
+    Left = 173
+    Top = 271
     Width = 206
     Height = 16
     Caption = 'Calc sal'#225'rio dentro de 12 meses'
@@ -106,11 +106,11 @@ object Form1: TForm1
   object Bevel1: TBevel
     Left = 211
     Top = 8
-    Width = 326
+    Width = 446
     Height = 185
   end
   object lblExercicios2: TLabel
-    Left = 318
+    Left = 374
     Top = 27
     Width = 120
     Height = 16
@@ -174,32 +174,6 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object lblEx5: TLabel
-    Left = 456
-    Top = 63
-    Width = 22
-    Height = 16
-    Caption = 'Ex5'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object lblEx6: TLabel
-    Left = 456
-    Top = 132
-    Width = 22
-    Height = 16
-    Caption = 'Ex6'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
   object btnFor: TButton
     Left = 72
     Top = 82
@@ -233,22 +207,22 @@ object Form1: TForm1
     OnClick = btnRepeatClick
   end
   object edNota1: TEdit
-    Left = 138
-    Top = 285
+    Left = 58
+    Top = 293
     Width = 81
     Height = 21
     TabOrder = 2
   end
   object edSalario: TEdit
-    Left = 315
-    Top = 307
+    Left = 235
+    Top = 315
     Width = 81
     Height = 21
     TabOrder = 3
   end
   object btnMedia: TButton
-    Left = 142
-    Top = 366
+    Left = 62
+    Top = 374
     Width = 75
     Height = 25
     Caption = 'Media'
@@ -262,8 +236,8 @@ object Form1: TForm1
     OnClick = btnMediaClick
   end
   object btnSalario: TButton
-    Left = 318
-    Top = 334
+    Left = 238
+    Top = 342
     Width = 75
     Height = 25
     Caption = 'Salario'
@@ -277,15 +251,15 @@ object Form1: TForm1
     OnClick = btnSalarioClick
   end
   object edNota2: TEdit
-    Left = 138
-    Top = 312
+    Left = 58
+    Top = 320
     Width = 81
     Height = 21
     TabOrder = 6
   end
   object edNota3: TEdit
-    Left = 138
-    Top = 339
+    Left = 58
+    Top = 347
     Width = 81
     Height = 21
     TabOrder = 7
@@ -325,23 +299,5 @@ object Form1: TForm1
     Caption = 'Ex4'
     TabOrder = 11
     OnClick = btnEx4Click
-  end
-  object btnEx5: TButton
-    Left = 432
-    Top = 85
-    Width = 75
-    Height = 25
-    Caption = 'Ex5'
-    TabOrder = 12
-    OnClick = btnEx5Click
-  end
-  object btnEx6: TButton
-    Left = 432
-    Top = 154
-    Width = 75
-    Height = 25
-    Caption = 'Ex6'
-    TabOrder = 13
-    OnClick = btnEx6Click
   end
 end

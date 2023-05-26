@@ -36,9 +36,6 @@ type
     lblEx4: TLabel;
     btnEx5: TButton;
     lblEx5: TLabel;
-    lblEx6: TLabel;
-    btnEx6: TButton;
-    procedure btnEx6Click(Sender: TObject);
     procedure btnEx5Click(Sender: TObject);
     procedure btnEx4Click(Sender: TObject);
     procedure btnEx3Click(Sender: TObject);
@@ -151,28 +148,9 @@ var
   conversion: String;
 begin
   //Crie uma constante com o texto '133,25' e substitua a virgula por um ponto (. ) em uma variável.
-  ShowMessage('Change the comma of 133,25 for point');
+
   conversion := StringReplace(Numero,',','.',[rfReplaceAll, rfIgnoreCase]);
   ShowMessage(conversion);
-end;
-
-procedure TForm1.btnEx6Click(Sender: TObject);
-var
-  I: Integer;
-  Nome: String;
-begin
-//Crie uma constante com um nome qualquer e mostre uma mensagem dizendo a quantidade de caracteres que aquele nome possui.
-
-ShowMessage('Writing how many caracteres has the name Muliro');
-
-  Nome := 'Murilo';
-
-  for I := Length(Nome) to 6 do
-  begin
-    StrToInt(Nome);
-    ShowMessage(Nome);
-  end;
-
 end;
 
 procedure TForm1.btnForClick(Sender: TObject);

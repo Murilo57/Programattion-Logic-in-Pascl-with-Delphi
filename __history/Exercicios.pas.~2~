@@ -34,12 +34,6 @@ type
     btnEx3: TButton;
     btnEx4: TButton;
     lblEx4: TLabel;
-    btnEx5: TButton;
-    lblEx5: TLabel;
-    lblEx6: TLabel;
-    btnEx6: TButton;
-    procedure btnEx6Click(Sender: TObject);
-    procedure btnEx5Click(Sender: TObject);
     procedure btnEx4Click(Sender: TObject);
     procedure btnEx3Click(Sender: TObject);
     procedure btnEx2Click(Sender: TObject);
@@ -111,10 +105,10 @@ Const
   Nome = 'Murilo';
 var
   I: Integer;
-  Reverse,reverse2, Copi: String;
+  Reverse,reverse2: String;
+  Copi, m, u, r, w, l, o: String;
 begin
-
-
+//  ShowMessage('Write name "Murilo" to the reverse');
 // Crie uma constante com uma palavra qualquer e utilizando laços e funções do pascal apresente uma mensagem com essa palavra escrita ao contrario.
 
 // First way to do it
@@ -135,44 +129,32 @@ begin
 
 // Third way to do it, but this time writing the full name
   Length(Nome);
-  ShowMessage('Writing the name "Murilo" reverse');
   Reverse2 := '';
   for I := Length(Nome) downto 1 do
   begin
     Reverse2 := Reverse2 + (Nome[I]);
     ShowMessage(Reverse2);
+
+//    Copi := Copy(Nome[6]);
+//    o := (Nome[6]);
+//
+//    Copi := Copy(Nome[5]);
+//    l := (Nome[5]);
+//
+//    Copi := Copy(Nome[4]);
+//    w := (Nome[4]);
+//
+//    Copi := Copy(Nome[3]);
+//    r := (Nome[3]);
+//
+//    Copi := Copy(Nome[2]);
+//    u := (Nome[2]);
+//
+//    Copi := Copy(Nome[1]);
+//    m := (Nome[1]);
+//
+//    ShowMessage(o+l+w+r+u+m);
   end;
-end;
-
-procedure TForm1.btnEx5Click(Sender: TObject);
-Const
-  Numero = '133,25';
-var
-  conversion: String;
-begin
-  //Crie uma constante com o texto '133,25' e substitua a virgula por um ponto (. ) em uma variável.
-  ShowMessage('Change the comma of 133,25 for point');
-  conversion := StringReplace(Numero,',','.',[rfReplaceAll, rfIgnoreCase]);
-  ShowMessage(conversion);
-end;
-
-procedure TForm1.btnEx6Click(Sender: TObject);
-var
-  I: Integer;
-  Nome: String;
-begin
-//Crie uma constante com um nome qualquer e mostre uma mensagem dizendo a quantidade de caracteres que aquele nome possui.
-
-ShowMessage('Writing how many caracteres has the name Muliro');
-
-  Nome := 'Murilo';
-
-  for I := Length(Nome) to 6 do
-  begin
-    StrToInt(Nome);
-    ShowMessage(Nome);
-  end;
-
 end;
 
 procedure TForm1.btnForClick(Sender: TObject);
